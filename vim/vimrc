@@ -2,7 +2,8 @@ filetype off
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
-syntax on
+"syntax on
+syntax enable
 
 set nocompatible
 
@@ -153,8 +154,10 @@ set modeline
 set modelines=10
 
 " Default color scheme
-colors molokai
-colorscheme molokai
+"colors molokai
+"colorscheme molokai
+set background=dark
+colorscheme solarized
 
 
 "augroup sparkup_types
@@ -176,8 +179,6 @@ au FileType htmldjango runtime! ftplugin/html/sparkup.vim
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
-colors molokai
-colorscheme molokai
 
 "Directories for swp files
 set backupdir=~/.vim/backup

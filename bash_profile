@@ -1,5 +1,5 @@
 export CLICOLOR=1
-export LSCOLORS=CxFxCxDxBxegedabagacad
+#export LSCOLORS=CxFxCxDxBxegedabagacad
 #alias mysql=/usr/local/mysql/bin/mysql
 #alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 export PATH=/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/sbin:$PATH
