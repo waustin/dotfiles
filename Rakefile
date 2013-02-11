@@ -12,13 +12,15 @@ task :install do
             # If it does exist check if it is the same as the source file
             if File.identical? file, destination_file
                 puts "\tIdentical #{destination_file} already exists"
+                # Skip identical files
             else
                 puts "\t#{destination_file} exists but is not identical"
+                #TODO How to handle differing files, make a backup of the
+                # origin or prompt to overwrite
             end
         else
             link_file(file, destination_file)
         end
-        #puts File.dirname(file)
     end
 end
 
