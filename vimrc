@@ -176,6 +176,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=htmldjango.html " For SnipMate
 au FileType htmldjango runtime! ftplugin/html/sparkup.vim
+au BufRead,BufNewFile *.j2 set filetype=htmljinja
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
