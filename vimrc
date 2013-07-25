@@ -187,3 +187,14 @@ set directory=~/.vim/backup
 
 " xterm not recognized right by vim
 set term=builtin_ansi
+
+" Airline stuff
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_enable_fugitive=1
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+let g:airline_section_b='%{fugitive#statusline()}'
+set noshowmode
+
+
