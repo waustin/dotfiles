@@ -4,3 +4,7 @@
 *.pyc
 .svn/*
 *.swp
+.env
+**/.sass-cache
+**/.sass-cache/*
+.sass-cache
